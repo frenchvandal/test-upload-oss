@@ -22,6 +22,7 @@ jobs:
       - name: Configure Aliyun Credentials
         uses: frenchvandal/configure-aliyun-credentials-action@master
         with:
+          role-to-assume: 'acs:ram::5352290963333981:role/githubdev'
           oidc-provider-arn: 'acs:ram::5352290963333981:oidc-provider/GitHub'
           role-session-name: 'github-action-session'
           role-session-expiration: 1800
