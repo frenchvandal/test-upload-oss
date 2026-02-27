@@ -15,6 +15,10 @@ jobs:
         uses: actions/checkout@v6
         with:
           fetch-depth: 0
+      - name: Use Node 24 for aliyun action
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
       - name: Configure Aliyun Credentials
         uses: frenchvandal/configure-aliyun-credentials-action@master
         with:
