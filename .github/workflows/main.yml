@@ -16,7 +16,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Configure Aliyun Credentials
-        uses: aliyun/configure-aliyun-credentials-action@v1
+        uses: frenchvandal/configure-aliyun-credentials-action@master
         with:
           role-to-assume: 'acs:ram::5352290963333981:role/githubdev'
           oidc-provider-arn: 'acs:ram::5352290963333981:oidc-provider/GitHub'
