@@ -26,4 +26,3 @@ jobs:
           oidc-provider-arn: 'acs:ram::5352290963333981:oidc-provider/GitHub'
           role-session-name: 'github-action-session'
           role-session-expiration: 1800
-          audience: 'github-actions'
