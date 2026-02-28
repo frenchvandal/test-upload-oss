@@ -15,6 +15,9 @@ jobs:
         uses: actions/checkout@v6
         with:
           fetch-depth: 0
+      - run:
+          node -v
+          npm -v
       - name: Configure Aliyun Credentials
         uses: frenchvandal/configure-aliyun-credentials-action@master
         with:
